@@ -1,0 +1,46 @@
+<div class="container-fluid page">
+  <div class="d-flex page__box p-3 mt-2">GENERAR CONSULTAS EPL</div>
+  <div class="page__content shadow p-3 position-relative">
+    <div class="page__content-data position-absolute text-center">
+     CARGAR ARCHIVO XML
+      <br><br>
+      <span class="p-float-label">
+       <label for="formFileLg" class="form-label"></label>
+      <input class="form-control form-control-lg" id="formFileLg"  type="file" (change)="selectFiles($event)">
+           <p-button  label="CargarDMN" icon="pi pi-check" iconPos="left" *ngIf="selectedFiles" [disabled]="!selectedFiles" (click)="uploadFiles()"></p-button>
+     </span>
+      <div id="box3">
+        <span>{{message}}</span>
+      </div>
+    </div>
+    <div class="confTable">
+      <table class="table">
+        <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Nombre Archivo</th>
+          <th scope="col">Ruta</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>Mark</td>
+          <td>Otto</td>
+
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>Jacob</td>
+          <td>Thornton</td>
+
+        </tr>
+
+        </tbody>
+      </table>
+    </div>
+
+  </div>
+</div>
+
+
